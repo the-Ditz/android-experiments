@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
                 Random randomNumberGenerator = new Random();
 
-                leftDice.setImageResource(randomNumberGenerator.nextInt(6));
-                rightDice.setImageResource(randomNumberGenerator.nextInt(6));
+                leftDice.setImageResource(diceArray[randomNumberGenerator.nextInt(6)]);
+                rightDice.setImageResource(diceArray[randomNumberGenerator.nextInt(6)]);
             }
         });
     }
